@@ -1,0 +1,39 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which tool is commonly used to analyze the libraries a binary uses?",
+      "answers": {
+        "a": "Wireshark",
+        "b": "Dependency Walker",
+        "c": "IDA Pro",
+        "d": "Burp Suite"
+      },
+      "explanations": {
+        "a": "Wireshark is a network protocol analyzer and is used to monitor network traffic.",
+        "b": "Dependency Walker is used to analyze the libraries and dependencies a binary uses. Learn more <a href='https://dependencywalker.com'>here</a>",
+        "c": "IDA Pro is primarily used for disassembly and reverse engineering.",
+        "d": "Burp Suite is used for web application security testing."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What method can be used to identify the domain or IP a malicious binary connects to?",
+      "answers": {
+        "a": "Checking the binary's file signature",
+        "b": "Examining the Import Table",
+        "c": "Monitoring the network traffic",
+        "d": "Using a debugger"
+      },
+      "explanations": {
+        "a": "File signatures help identify file types, not network connections.",
+        "b": "The Import Table shows the libraries used by the binary, not the network connections.",
+        "c": "Network traffic monitoring allows you to see the actual domains or IPs the binary connects to. Learn more <a href='https://www.wireshark.org'>here</a>",
+        "d": "A debugger is useful for inspecting runtime behavior, but network traffic gives direct insight into connections."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

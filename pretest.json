@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which section of the PE header provides information about the imported functions and libraries?",
+      "answers": {
+        "a": "Export Table",
+        "b": "Import Table",
+        "c": "Resource Table",
+        "d": "Relocation Table"
+      },
+      "explanations": {
+        "a": "The Export Table lists functions and resources that the binary makes available to other modules.",
+        "b": "The Import Table lists functions and libraries that the binary needs to run. More details <a href='https://docs.microsoft.com/en-us/windows/win32/debug/pe-format'>here</a>",
+        "c": "The Resource Table includes information about resources like icons and menus.",
+        "d": "The Relocation Table is used for address relocation in memory."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following tools can be used to extract strings from a binary to understand potential functionalities?",
+      "answers": {
+        "a": "Ghidra",
+        "b": "OllyDbg",
+        "c": "Strings",
+        "d": "Wireshark"
+      },
+      "explanations": {
+        "a": "Ghidra is a reverse engineering tool but not specifically for extracting strings.",
+        "b": "OllyDbg is a debugger and can be used for dynamic analysis but not specifically for string extraction.",
+        "c": "The Strings tool extracts readable strings from binary files, providing insights into potential functionalities. Learn more <a href='https://docs.microsoft.com/en-us/sysinternals/downloads/strings'>here</a>",
+        "d": "Wireshark is used for network analysis, not string extraction."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What type of analysis involves running the binary in a controlled environment to observe its behavior?",
+      "answers": {
+        "a": "Static Analysis",
+        "b": "Heuristic Analysis",
+        "c": "Dynamic Analysis",
+        "d": "Behavioral Analysis"
+      },
+      "explanations": {
+        "a": "Static Analysis involves examining the binary without executing it.",
+        "b": "Heuristic Analysis looks for patterns that might indicate malicious behavior.",
+        "c": "Dynamic Analysis involves running the binary in a controlled environment to observe its real-time behavior. More information <a href='https://malwareunicorn.org/workshops/dyn-analysis.html'>here</a>",
+        "d": "Behavioral Analysis is more general and may involve both static and dynamic techniques."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

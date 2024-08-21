@@ -1,0 +1,183 @@
+
+/home/runner/work/exp-malicious-binary-au/exp-malicious-binary-au/experiment/simulation/js/index-C2qfQN4H.js
+    9:1588   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+    9:4656   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   17:376    warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   25:908    warning  'setImmediate' is not defined                                              no-undef
+   33:596    warning  Unexpected combined character in character class                           no-misleading-character-class
+   33:3023   warning  Unnecessary escape character: \-                                           no-useless-escape
+   33:4912   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:202    warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   37:1216   warning  Empty block statement                                                      no-empty
+   37:2389   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:3869   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:3910   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:4077   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:4104   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:4695   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:6032   warning  'MSApp' is not defined                                                     no-undef
+   37:6080   warning  'MSApp' is not defined                                                     no-undef
+   37:7460   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:7553   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:8636   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   37:9657   warning  Expected to return a value in method 'get'                                 getter-return
+   37:9790   warning  'r' is defined but never used                                              no-unused-vars
+   37:9792   warning  'o' is defined but never used                                              no-unused-vars
+   37:9794   warning  'i' is defined but never used                                              no-unused-vars
+   37:9796   warning  'a' is defined but never used                                              no-unused-vars
+   37:9798   warning  's' is defined but never used                                              no-unused-vars
+   37:9800   warning  'l' is defined but never used                                              no-unused-vars
+   37:9973   warning  'e' is defined but never used                                              no-unused-vars
+   37:9975   warning  't' is defined but never used                                              no-unused-vars
+   37:9977   warning  'n' is defined but never used                                              no-unused-vars
+   37:9979   warning  'r' is defined but never used                                              no-unused-vars
+   37:9981   warning  'o' is defined but never used                                              no-unused-vars
+   37:9983   warning  'i' is defined but never used                                              no-unused-vars
+   37:9985   warning  'a' is defined but never used                                              no-unused-vars
+   37:9987   warning  's' is defined but never used                                              no-unused-vars
+   37:9989   warning  'l' is defined but never used                                              no-unused-vars
+   37:10041  warning  'e' is defined but never used                                              no-unused-vars
+   37:10043  warning  't' is defined but never used                                              no-unused-vars
+   37:10045  warning  'n' is defined but never used                                              no-unused-vars
+   37:10047  warning  'r' is defined but never used                                              no-unused-vars
+   37:10049  warning  'o' is defined but never used                                              no-unused-vars
+   37:10051  warning  'i' is defined but never used                                              no-unused-vars
+   37:10053  warning  'a' is defined but never used                                              no-unused-vars
+   37:10055  warning  's' is defined but never used                                              no-unused-vars
+   37:10057  warning  'l' is defined but never used                                              no-unused-vars
+   37:11890  warning  Empty block statement                                                      no-empty
+   37:19777  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:20120  warning  Invalid typeof comparison value                                            valid-typeof
+   37:20294  warning  Invalid typeof comparison value                                            valid-typeof
+   37:22166  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   37:27711  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   37:29177  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   37:33278  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   37:33465  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   37:34582  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   37:36027  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   37:37457  warning  Unexpected control character(s) in regular expression: \x00                no-control-regex
+   38:1506   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   38:1606   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   38:14667  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   38:15124  warning  Unexpected constant condition                                              no-constant-condition
+   38:15718  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   38:22290  warning  Empty block statement                                                      no-empty
+   38:22299  warning  Empty block statement                                                      no-empty
+   38:25675  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   38:26538  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   40:3968   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   40:5090   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   40:12874  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:12895  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:12965  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:13147  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:13249  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:13329  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:13353  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:13405  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:13760  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:15957  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:16236  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:16683  warning  Unnecessary escape character: \/                                           no-useless-escape
+   40:17565  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:17874  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:25906  warning  Empty block statement                                                      no-empty
+   40:25941  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   40:30024  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   40:31004  warning  't' is defined but never used                                              no-unused-vars
+   40:31006  warning  'n' is defined but never used                                              no-unused-vars
+   40:31034  warning  't' is defined but never used                                              no-unused-vars
+   40:31036  warning  'n' is defined but never used                                              no-unused-vars
+   40:34761  warning  Unexpected constant condition                                              no-constant-condition
+   40:39289  warning  Unexpected constant condition                                              no-constant-condition
+   40:39581  warning  Unexpected constant condition                                              no-constant-condition
+   40:42617  warning  Empty block statement                                                      no-empty
+   40:53038  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   40:54444  warning  'qy' is a function                                                         no-func-assign
+   40:54450  warning  'Yy' is a function                                                         no-func-assign
+   40:55368  warning  '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                            no-undef
+   40:55467  warning  Empty block statement                                                      no-empty
+   40:57500  warning  '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                            no-undef
+   40:57557  warning  '__REACT_DEVTOOLS_GLOBAL_HOOK__' is not defined                            no-undef
+   40:59555  warning  'k' is a function                                                          no-func-assign
+   40:65307  warning  Empty block statement                                                      no-empty
+   40:65811  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   40:67824  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   40:68060  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   40:68116  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   40:68245  warning  Expected a 'break' statement before 'default'                              no-fallthrough
+   40:68567  warning  Expected a 'break' statement before 'default'                              no-fallthrough
+   40:69353  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   40:70046  warning  Expected a 'break' statement before 'default'                              no-fallthrough
+   40:70072  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+   40:72140  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   40:72350  warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   47:3241   warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   47:3278   warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+   47:6611   warning  't' is a function                                                          no-func-assign
+   47:16098  warning  'r' is defined but never used                                              no-unused-vars
+   55:6241   warning  'e' is defined but never used                                              no-unused-vars
+   55:6243   warning  't' is defined but never used                                              no-unused-vars
+   55:6543   warning  'e' is defined but never used                                              no-unused-vars
+   55:6545   warning  't' is defined but never used                                              no-unused-vars
+   55:6842   warning  'e' is defined but never used                                              no-unused-vars
+   55:6844   warning  't' is defined but never used                                              no-unused-vars
+   55:6846   warning  'n' is defined but never used                                              no-unused-vars
+   55:6848   warning  'r' is defined but never used                                              no-unused-vars
+   55:6850   warning  'o' is defined but never used                                              no-unused-vars
+   55:6906   warning  'n' is defined but never used                                              no-unused-vars
+   55:6914   warning  'r' is assigned a value but never used                                     no-unused-vars
+   55:8457   warning  Empty block statement                                                      no-empty
+   55:11151  warning  '$e' is a function                                                         no-func-assign
+   55:15224  warning  't' is defined but never used                                              no-unused-vars
+   55:16467  warning  'n' is defined but never used                                              no-unused-vars
+   55:16717  warning  'n' is defined but never used                                              no-unused-vars
+   55:17058  warning  'n' is defined but never used                                              no-unused-vars
+   55:17165  warning  'n' is defined but never used                                              no-unused-vars
+   55:18531  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   55:19778  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   55:24920  warning  'Nb' is a function                                                         no-func-assign
+   55:31153  warning  'Iu' is a function                                                         no-func-assign
+  128:10793  warning  'zb' is a function                                                         no-func-assign
+  128:13055  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  128:17203  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  128:17227  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  128:17421  warning  'w' is assigned to itself                                                  no-self-assign
+  129:6362   warning  'xe' is defined but never used                                             no-unused-vars
+  129:25176  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  134:888    warning  't' is defined but never used                                              no-unused-vars
+  134:905    warning  'e' is defined but never used                                              no-unused-vars
+  134:907    warning  't' is defined but never used                                              no-unused-vars
+  134:923    warning  'e' is defined but never used                                              no-unused-vars
+  134:925    warning  't' is defined but never used                                              no-unused-vars
+  134:3048   warning  'v0' is defined but never used                                             no-unused-vars
+  134:4501   warning  'global' is not defined                                                    no-undef
+  134:4520   warning  'global' is not defined                                                    no-undef
+  134:12308  warning  'Ku' is a function                                                         no-func-assign
+  134:12531  warning  Empty block statement                                                      no-empty
+  134:12540  warning  'bS' is a function                                                         no-func-assign
+  135:1072   warning  Unsafe usage of ReturnStatement                                            no-unsafe-finally
+  135:1092   warning  Unsafe usage of ThrowStatement                                             no-unsafe-finally
+  136:491    warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+  136:528    warning  Expected a 'break' statement before 'case'                                 no-fallthrough
+  136:13705  warning  Unnecessary escape character: \:                                           no-useless-escape
+  138:8827   warning  'r' is assigned a value but never used                                     no-unused-vars
+  145:10027  warning  'r' is already defined                                                     no-redeclare
+  177:484    warning  'r' is already defined                                                     no-redeclare
+  177:3629   warning  'lD' is assigned a value but never used                                    no-unused-vars
+  177:3653   warning  'uD' is assigned a value but never used                                    no-unused-vars
+  177:12475  warning  'e' is defined but never used                                              no-unused-vars
+  177:14218  warning  'r' is already defined                                                     no-redeclare
+  177:14624  warning  'n' is assigned a value but never used                                     no-unused-vars
+  177:14647  warning  'o' is assigned a value but never used                                     no-unused-vars
+  251:1403   warning  'n' is defined but never used                                              no-unused-vars
+  251:3706   warning  't' is defined but never used                                              no-unused-vars
+  251:3708   warning  'n' is defined but never used                                              no-unused-vars
+  251:20284  warning  'r' is defined but never used                                              no-unused-vars
+  257:6375   warning  Empty block statement                                                      no-empty
+  257:25753  warning  'l' is defined but never used                                              no-unused-vars
+  257:48415  warning  'r' is already defined                                                     no-redeclare
+
+✖ 178 problems (0 errors, 178 warnings)
+
