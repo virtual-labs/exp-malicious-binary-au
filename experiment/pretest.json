@@ -51,6 +51,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the primary purpose of an Import Address Table (IAT)?",
+      "answers": {
+        "a": "To store information about functions exported by the binary",
+        "b": "To list the functions and libraries the binary needs at runtime",
+        "c": "To contain metadata about the binary’s resource files",
+        "d": "To store the binary’s relocation information"
+      },
+      "explanations": {
+        "a": "The Export Table, not the IAT, stores functions exported by the binary.",
+        "b": "Correct! The Import Address Table (IAT) helps the binary locate and use necessary external functions at runtime.",
+        "c": "The Resource Table, not the IAT, contains metadata about resource files like icons and dialogs.",
+        "d": "The Relocation Table handles address relocation in memory, not function imports."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which API function is commonly used to load external libraries dynamically?",
+      "answers": {
+        "a": "CreateProcess",
+        "b": "LoadLibrary",
+        "c": "VirtualAlloc",
+        "d": "OpenFile"
+      },
+      "explanations": {
+        "a": "CreateProcess is used to start a new process, not load a library.",
+        "b": "Correct! LoadLibrary is commonly used to dynamically load external libraries in Windows.",
+        "c": "VirtualAlloc is used for memory allocation, not loading libraries.",
+        "d": "OpenFile is used to open files, not libraries."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is a common technique used by malware to evade detection using Import Table manipulation?",
+      "answers": {
+        "a": "API hashing",
+        "b": "Code signing",
+        "c": "Using static linking",
+        "d": "Increasing the binary’s file size"
+      },
+      "explanations": {
+        "a": "Correct! API hashing is used by malware to obfuscate function imports and avoid static analysis detection.",
+        "b": "Code signing is used to verify the integrity of binaries but does not hide imports.",
+        "c": "Static linking removes the need for dynamic imports but does not manipulate the Import Table.",
+        "d": "Increasing the file size does not directly impact Import Table analysis."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
