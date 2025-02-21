@@ -34,6 +34,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which section of a PE (Portable Executable) file contains the Import Table?",
+      "answers": {
+        "a": ".text",
+        "b": ".data",
+        "c": ".rdata",
+        "d": ".rsrc"
+      },
+      "explanations": {
+        "a": "The .text section contains executable code, not the Import Table.",
+        "b": "The .data section contains initialized and uninitialized global variables.",
+        "c": "Correct! The .rdata section typically holds the Import Table, which contains references to external libraries.",
+        "d": "The .rsrc section stores resource-related data like icons and dialogs."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How can the Import Address Table (IAT) be used to detect malware?",
+      "answers": {
+        "a": "By identifying suspicious API calls",
+        "b": "By analyzing the binary’s entropy",
+        "c": "By checking for digital signatures",
+        "d": "By monitoring network traffic"
+      },
+      "explanations": {
+        "a": "Correct! The IAT can reveal which APIs the binary depends on, helping to identify malicious behavior.",
+        "b": "Entropy analysis detects packed or obfuscated binaries but does not directly analyze API calls.",
+        "c": "Digital signatures verify file authenticity but do not directly detect malware behavior.",
+        "d": "Network monitoring can help identify malicious activity but does not analyze imported functions."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is a common sign of a malware binary in the Import Table?",
+      "answers": {
+        "a": "Use of functions like CreateProcess, VirtualAlloc, and LoadLibrary",
+        "b": "Only standard Windows libraries being imported",
+        "c": "The absence of any dynamically linked libraries",
+        "d": "A high number of graphics-related API calls"
+      },
+      "explanations": {
+        "a": "Correct! Malware often imports functions related to process creation, memory allocation, and dynamic library loading.",
+        "b": "Standard Windows libraries alone do not indicate malicious intent.",
+        "c": "Most binaries require some external libraries, and the absence of imports is unusual.",
+        "d": "Graphics-related API calls are not commonly associated with malware behavior."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
