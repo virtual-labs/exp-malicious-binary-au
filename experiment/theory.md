@@ -11,9 +11,10 @@ The Import Table is a section in a binary file (specifically in the Portable Exe
 
 #### Why Analyze the Import Table?
 Malware often uses specific functions that legitimate programs don’t typically need. For instance:
-
-<strong>Network-related functions</strong> (e.g., InternetOpen or HttpSendRequest from WinINet.dll) might mean the binary communicates with a remote server, possibly to send stolen data or receive commands.
-<strong>System-modifying functions</strong> (e.g., WriteFile or CreateRemoteThread) could indicate the binary is trying to change files or inject code into other programs, a common malware trick.
+<p>
+<strong>Network-related functions</strong> (e.g., InternetOpen or HttpSendRequest from WinINet.dll) might mean the binary communicates with a remote server, possibly to send stolen data or receive commands.</p>
+<p>
+<strong>System-modifying functions</strong> (e.g., WriteFile or CreateRemoteThread) could indicate the binary is trying to change files or inject code into other programs, a common malware trick.</p>
 <p>
 Analyzing the Import Table is a form of static analysis, where we study the binary without running it, making it safer than executing potentially harmful code.</p>
 
