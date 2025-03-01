@@ -1,2 +1,2 @@
 ### Aim of the experiment
-To understand how to analyze the Import Table of a binary and identify potentially malicious behavior. Additionally, this experiment will help in recognizing suspicious API calls that could indicate security threats.
+To understand how to analyze the Import Table of a binary and identify potentially malicious behavior. This involves examining the imported functions and libraries to detect suspicious patterns or APIs commonly associated with malware, enhancing our ability to assess the binary's intent and potential security risks.

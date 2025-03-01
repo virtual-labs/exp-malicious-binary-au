@@ -36,54 +36,54 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which section of a PE (Portable Executable) file contains the Import Table?",
+      "question": "Which Windows API function in the Import Table might indicate a binary is trying to modify system files?",
       "answers": {
-        "a": ".text",
-        "b": ".data",
-        "c": ".rdata",
-        "d": ".rsrc"
+        "a": "GetProcAddress",
+        "b": "WriteFile",
+        "c": "Sleep",
+        "d": "GetTickCount"
       },
       "explanations": {
-        "a": "The .text section contains executable code, not the Import Table.",
-        "b": "The .data section contains initialized and uninitialized global variables.",
-        "c": "Correct! The .rdata section typically holds the Import Table, which contains references to external libraries.",
-        "d": "The .rsrc section stores resource-related data like icons and dialogs."
+        "a": "GetProcAddress is used to retrieve function addresses dynamically, not directly for file modification.",
+        "b": "WriteFile is a Windows API function that can be used to write to files, including system files if permissions allow. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-writefile'>here</a>",
+        "c": "Sleep is used to pause execution, not for file modification.",
+        "d": "GetTickCount retrieves the time elapsed since system start, unrelated to file operations."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
-      "question": "How can the Import Address Table (IAT) be used to detect malware?",
+      "question": "What might the presence of 'InternetOpenA' in the Import Table suggest about a binary?",
       "answers": {
-        "a": "By identifying suspicious API calls",
-        "b": "By analyzing the binary’s entropy",
-        "c": "By checking for digital signatures",
-        "d": "By monitoring network traffic"
+        "a": "It performs file encryption",
+        "b": "It establishes network connections",
+        "c": "It modifies registry settings",
+        "d": "It creates new processes"
       },
       "explanations": {
-        "a": "Correct! The IAT can reveal which APIs the binary depends on, helping to identify malicious behavior.",
-        "b": "Entropy analysis detects packed or obfuscated binaries but does not directly analyze API calls.",
-        "c": "Digital signatures verify file authenticity but do not directly detect malware behavior.",
-        "d": "Network monitoring can help identify malicious activity but does not analyze imported functions."
+        "a": "File encryption would typically involve functions like CryptEncrypt, not InternetOpenA.",
+        "b": "InternetOpenA is a WinINet API function used to initialize an internet session, suggesting network connectivity. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/wininet/nf-wininet-internetopena'>here</a>",
+        "c": "Registry modifications would use functions like RegSetValueEx, not InternetOpenA.",
+        "d": "Process creation typically involves CreateProcess, not InternetOpenA."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "intermediate"
     },
     {
-      "question": "What is a common sign of a malware binary in the Import Table?",
+      "question": "Why might a binary importing 'CreateRemoteThread' be considered suspicious?",
       "answers": {
-        "a": "Use of functions like CreateProcess, VirtualAlloc, and LoadLibrary",
-        "b": "Only standard Windows libraries being imported",
-        "c": "The absence of any dynamically linked libraries",
-        "d": "A high number of graphics-related API calls"
+        "a": "It suggests file compression",
+        "b": "It indicates potential process injection",
+        "c": "It shows network monitoring capabilities",
+        "d": "It implies GUI creation"
       },
       "explanations": {
-        "a": "Correct! Malware often imports functions related to process creation, memory allocation, and dynamic library loading.",
-        "b": "Standard Windows libraries alone do not indicate malicious intent.",
-        "c": "Most binaries require some external libraries, and the absence of imports is unusual.",
-        "d": "Graphics-related API calls are not commonly associated with malware behavior."
+        "a": "File compression would use functions from libraries like zlib, not CreateRemoteThread.",
+        "b": "CreateRemoteThread can be used to inject code into another process, a common malware technique. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread'>here</a>",
+        "c": "Network monitoring would involve functions like those in Winsock, not CreateRemoteThread.",
+        "d": "GUI creation typically uses functions from User32.dll or GDI32.dll, not CreateRemoteThread."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "intermediate"
     }
   ]
