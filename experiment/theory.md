@@ -11,14 +11,13 @@ The Import Table is a section in a binary file (specifically in the Portable Exe
 
 #### Why Analyze the Import Table?
 Malware often uses specific functions that legitimate programs don’t typically need. For instance:
-<p>
-<strong>Network-related functions</strong> (e.g., InternetOpen or HttpSendRequest from WinINet.dll) might mean the binary communicates with a remote server, possibly to send stolen data or receive commands.</p>
-<p>
-<strong>System-modifying functions</strong> (e.g., WriteFile or CreateRemoteThread) could indicate the binary is trying to change files or inject code into other programs, a common malware trick.</p>
+
+<strong>Network-related functions</strong> (e.g., InternetOpen or HttpSendRequest from WinINet.dll) might mean the binary communicates with a remote server, possibly to send stolen data or receive commands.
+<strong>System-modifying functions</strong> (e.g., WriteFile or CreateRemoteThread) could indicate the binary is trying to change files or inject code into other programs, a common malware trick.
 <p>
 Analyzing the Import Table is a form of static analysis, where we study the binary without running it, making it safer than executing potentially harmful code.</p>
 
-#### What is String Extraction?
+####  String Extraction
 String extraction is the process of finding and pulling out readable text (called "strings") from a binary file. A binary file is mostly machine code—numbers and instructions a computer understands—but it often contains human-readable text like URLs (e.g., http://example.com), IP addresses (e.g., 192.168.1.1), file paths (e.g., C:\Windows), or commands. These strings can give clues about what the binary does, especially if it’s malicious. For example:
 </p>
 <p>
