@@ -1,5 +1,3 @@
-### Theory
-
 ####  Binary File
 A binary file is a type of computer file that contains machine-readable code, which a computer can execute. These files are often programs (like .exe files on Windows) that tell the computer what to do. However, some binaries can be malicious, such as viruses or malware, designed to harm systems or steal data.
 
