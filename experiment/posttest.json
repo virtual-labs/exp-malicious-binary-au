@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which tool is commonly used to analyze the libraries a binary uses?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Wireshark",
+        "b": "Dependency Walker",
+        "c": "IDA Pro",
+        "d": "Burp Suite"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Wireshark is a network protocol analyzer and is used to monitor network traffic.",
+        "b": "Dependency Walker is used to analyze the libraries and dependencies a binary uses. Learn more <a href='https://dependencywalker.com'>here</a>",
+        "c": "IDA Pro is primarily used for disassembly and reverse engineering.",
+        "d": "Burp Suite is used for web application security testing."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What method can be used to identify the domain or IP a malicious binary connects to?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Checking the binary's file signature",
+        "b": "Examining the Import Table",
+        "c": "Monitoring the network traffic",
+        "d": "Using a debugger"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "File signatures help identify file types, not network connections.",
+        "b": "The Import Table shows the libraries used by the binary, not the network connections.",
+        "c": "Network traffic monitoring allows you to see the actual domains or IPs the binary connects to. Learn more <a href='https://www.wireshark.org'>here</a>",
+        "d": "A debugger is useful for inspecting runtime behavior, but network traffic gives direct insight into connections."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which Windows API function in the Import Table might indicate a binary is trying to modify system files?",
+      "answers": {
+        "a": "GetProcAddress",
+        "b": "WriteFile",
+        "c": "Sleep",
+        "d": "GetTickCount"
+      },
+      "explanations": {
+        "a": "GetProcAddress is used to retrieve function addresses dynamically, not directly for file modification.",
+        "b": "WriteFile is a Windows API function that can be used to write to files, including system files if permissions allow. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-writefile'>here</a>",
+        "c": "Sleep is used to pause execution, not for file modification.",
+        "d": "GetTickCount retrieves the time elapsed since system start, unrelated to file operations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What might the presence of 'InternetOpenA' in the Import Table suggest about a binary?",
+      "answers": {
+        "a": "It performs file encryption",
+        "b": "It establishes network connections",
+        "c": "It modifies registry settings",
+        "d": "It creates new processes"
+      },
+      "explanations": {
+        "a": "File encryption would typically involve functions like CryptEncrypt, not InternetOpenA.",
+        "b": "InternetOpenA is a WinINet API function used to initialize an internet session, suggesting network connectivity. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/wininet/nf-wininet-internetopena'>here</a>",
+        "c": "Registry modifications would use functions like RegSetValueEx, not InternetOpenA.",
+        "d": "Process creation typically involves CreateProcess, not InternetOpenA."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why might a binary importing 'CreateRemoteThread' be considered suspicious?",
+      "answers": {
+        "a": "It suggests file compression",
+        "b": "It indicates potential process injection",
+        "c": "It shows network monitoring capabilities",
+        "d": "It implies GUI creation"
+      },
+      "explanations": {
+        "a": "File compression would use functions from libraries like zlib, not CreateRemoteThread.",
+        "b": "CreateRemoteThread can be used to inject code into another process, a common malware technique. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread'>here</a>",
+        "c": "Network monitoring would involve functions like those in Winsock, not CreateRemoteThread.",
+        "d": "GUI creation typically uses functions from User32.dll or GDI32.dll, not CreateRemoteThread."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }

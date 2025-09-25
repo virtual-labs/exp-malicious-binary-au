@@ -2,38 +2,108 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which section of the PE header provides information about the imported functions and libraries?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Export Table",
+        "b": "Import Table",
+        "c": "Resource Table",
+        "d": "Relocation Table"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The Export Table lists functions and resources that the binary makes available to other modules.",
+        "b": "The Import Table lists functions and libraries that the binary needs to run. More details <a href='https://docs.microsoft.com/en-us/windows/win32/debug/pe-format'>here</a>",
+        "c": "The Resource Table includes information about resources like icons and menus.",
+        "d": "The Relocation Table is used for address relocation in memory."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following tools can be used to extract strings from a binary to understand potential functionalities?",
+      "answers": {
+        "a": "Ghidra",
+        "b": "OllyDbg",
+        "c": "Strings",
+        "d": "Wireshark"
+      },
+      "explanations": {
+        "a": "Ghidra is a reverse engineering tool but not specifically for extracting strings.",
+        "b": "OllyDbg is a debugger and can be used for dynamic analysis but not specifically for string extraction.",
+        "c": "The Strings tool extracts readable strings from binary files, providing insights into potential functionalities. Learn more <a href='https://docs.microsoft.com/en-us/sysinternals/downloads/strings'>here</a>",
+        "d": "Wireshark is used for network analysis, not string extraction."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What type of analysis involves running the binary in a controlled environment to observe its behavior?",
+      "answers": {
+        "a": "Static Analysis",
+        "b": "Heuristic Analysis",
+        "c": "Dynamic Analysis",
+        "d": "Behavioral Analysis"
+      },
+      "explanations": {
+        "a": "Static Analysis involves examining the binary without executing it.",
+        "b": "Heuristic Analysis looks for patterns that might indicate malicious behavior.",
+        "c": "Dynamic Analysis involves running the binary in a controlled environment to observe its real-time behavior. More information <a href='https://malwareunicorn.org/workshops/dyn-analysis.html'>here</a>",
+        "d": "Behavioral Analysis is more general and may involve both static and dynamic techniques."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which imported function might indicate a binary is attempting to hide its presence on a system?",
+      "answers": {
+        "a": "CreateFileA",
+        "b": "SetWindowsHookEx",
+        "c": "ReadProcessMemory",
+        "d": "GetSystemTime"
+      },
+      "explanations": {
+        "a": "CreateFileA is used for file operations, not specifically for hiding.",
+        "b": "SetWindowsHookEx can be used to monitor or manipulate system events, often employed by stealthy malware to hide. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexa'>here</a>",
+        "c": "ReadProcessMemory is used to read another process's memory, not for hiding.",
+        "d": "GetSystemTime retrieves the current time, unrelated to hiding behavior."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What might strings containing 'http://' or IP addresses in a binary suggest?",
+      "answers": {
+        "a": "Potential network communication",
+        "b": "File system manipulation",
+        "c": "Process creation",
+        "d": "Memory allocation"
+      },
+      "explanations": {
+        "a": "Strings with 'http://' or IP addresses typically indicate the binary may connect to remote servers. More info <a href='https://www.sans.org/reading-room/whitepapers/malicious/malware-analysis-basics-37072'>here</a>",
+        "b": "File system manipulation would involve file paths or directory names, not URLs or IPs.",
+        "c": "Process creation would reference executable names or system commands, not network addresses.",
+        "d": "Memory allocation would involve numeric values or memory-related APIs, not network addresses."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is a common characteristic of a malicious binary's Import Table?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Large number of graphical user interface (GUI) functions",
+        "b": "Presence of cryptographic functions like CryptEncrypt",
+        "c": "Exclusive use of standard input/output functions",
+        "d": "Absence of any dynamic link library (DLL) references"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "GUI functions are more common in legitimate applications than malware.",
+        "b": "Cryptographic functions like CryptEncrypt might indicate encryption or obfuscation, common in malware. Learn more <a href='https://docs.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-cryptencrypt'>here</a>",
+        "c": "Standard I/O functions alone don’t typically indicate malicious intent.",
+        "d": "Malicious binaries often rely on DLLs for functionality, so their absence is uncommon."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
+
+
